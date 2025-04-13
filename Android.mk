@@ -22,7 +22,7 @@ LOCAL_PATH := $(call my-dir)
 # did, the PRIVATE_* vars for R.java wouldn't be guaranteed to be correct.
 # Instead, it depends on the R.stamp file, which lists the corresponding
 # R.java file as a prerequisite.
-lineage_platform_res := APPS/org.lineageos.platform-res_intermediates/aapt
+lineage_platform_res := APPS/org.etucqzs.platform-res_intermediates/aapt
 
 # List of packages used in lineage-api-stubs
 lineage_stub_packages := lineageos.app:lineageos.content:lineageos.hardware:lineageos.media:lineageos.os:lineageos.preference:lineageos.profiles:lineageos.providers:lineageos.platform:lineageos.power:lineageos.util:lineageos.weather:lineageos.weatherservice:lineageos.style:lineageos.trust
@@ -32,10 +32,10 @@ lineage_framework_module := $(LOCAL_INSTALLED_MODULE)
 # Make sure that R.java and Manifest.java are built before we build
 # the source for this library.
 lineage_framework_res_R_stamp := \
-    $(call intermediates-dir-for,APPS,org.lineageos.platform-res,,COMMON)/src/R.stamp
+    $(call intermediates-dir-for,APPS,org.etucqzs.platform-res,,COMMON)/src/R.stamp
 LOCAL_ADDITIONAL_DEPENDENCIES := $(lineage_framework_res_R_stamp)
 
-$(lineage_framework_module): | $(dir $(lineage_framework_module))org.lineageos.platform-res.apk
+$(lineage_framework_module): | $(dir $(lineage_framework_module))org.etucqzs.platform-res.apk
 
 lineage_framework_built := $(call java-lib-deps, org.lineageos.platform)
 

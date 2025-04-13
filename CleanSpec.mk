@@ -37,7 +37,7 @@
 # *****************************************************************
 # NEWER CLEAN STEPS MUST BE AT THE END OF THE LIST ABOVE THE BANNER
 # *****************************************************************
-$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/APPS/org.lineageos.platform-res_intermediates)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/APPS/org.etucqzs.platform-res_intermediates)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.lineageos.platform_intermediates)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.lineageos.platform.sdk_intermediates)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/common/obj/JAVA_LIBRARIES/org.lineageos.platform.internal_intermediates)
